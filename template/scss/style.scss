@@ -3,6 +3,7 @@
     background-color: #54397e;
 }
 .carousel-caption{
+        position: absolute;
         left: 20px;
         text-align: left;
         padding-bottom: 20px;
@@ -13,4 +14,18 @@
         max-width: 55%;
         margin-bottom: 4px;
     }
+}
+hr.section-divider::before{
+    z-index: 10000;
+    content: "\e9da";
+    font-family: 'icomoon';
+    color: #54397e;
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    right: 50%;
+    width: 40px;
+    height: 30px;
+    margin-left: -20px;
+    font-size: 30px;
 }
