@@ -1,6 +1,35 @@
  
 .navbar{
     background-color: #54397e;
+    ul.dropdown-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        float: left;
+        min-width: 160px;
+        padding: 5px 0;
+        margin: 2px 0 0;
+        font-size: 14px;
+        text-align: left;
+        list-style: none;
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: 4px;
+
+        li.dropdown-menu::before{
+
+            li::before {
+                position: absolute;
+                content: "\e900";
+                font-family: 'icomoon';
+                left: 0;
+                color: #E43F21FF;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }   
+    }       
 }
 .carousel-caption{
         position: absolute;
@@ -15,7 +44,7 @@
         margin-bottom: 4px;
     }
 }
-hr.section-divider::before{
+hr.section-divider:after {
     z-index: 10000;
     content: "\e9da";
     font-family: 'icomoon';
