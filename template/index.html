@@ -10,22 +10,22 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./css/icons.css.css">
+    <link rel="stylesheet" href="./scss/style.scss">
 </head>
 <body>
      <header>
          <div class="container">
              <div class="h-inner py-4 col-sm-12">
-                   <section class="logo col-md-6">
+                   <div class="logo col-md-6">
                      <h1 class="site title">
                       <a class="text-decoration-none fs-1 text-dark" href="#">Unite Demo</a>
                      </h1>
                      <h4 class="my-10 ">FREE WordPress Wedding Theme</h4>
-                   </section>
+                    </div>
              </div>
          </div>
-     </header>
-     <!--header ands here-->
-    <nav class="navbar navbar-expand-lg navbar-light text-light ">
+      </header>
+    <nav class="navbar navbar-expand-lg navbar-light text-light bg-primary">
     <div class="container-fluid  px-5">
       <a class="navbar-brand" href="#">Home</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
               About
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#" ><span class="glyphicon glyphicon-align-justify"></span>Full-Width Page</a></li>
+              <li><a class="dropdown-item" href="#" >Full-Width Page</a></li>
               <li><a class="dropdown-item" href="#">Contact us</a></li>
               <li><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Menu Options</a></li>
               <li><a class="dropdown-item" href="#"> Page Markup And Formatting</a></li>
@@ -64,7 +64,7 @@
       </div>
     </div>
     </nav>
-  <div class="container p-0">
+    <div id="content" class="container p-0">
     <div class="row pull-left">
       <div id="primary" class="content col-sm-12 col-md-12">
         <div class="slider">
@@ -72,7 +72,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./img/weiler-photography-3.webp" class="d-block w-100" alt="first slide" height="500">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block text-align-left">
                   <h4>Bold and beautiful</h4>
                   <p>
                     Etiam vitae posuere eros. Maecenas et luctus orci. In a enim et sapien condimentum porttitor.
@@ -116,83 +116,135 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-<footer class="site-bottom">
-  <section class="fsb-upper">
-    <div class="container">
-      <div class="upp-inner">
+    </div> 
+      <div class="home page row">
         <div class="col-sm-6 col-md-4 card">
-          <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="true" href="#">POPULAR</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">RECENT</a>
-              </li>
-              <li class="nav-item">
-                <a href="#messages" data-toggle="tab">
-                  <i class="icon-bubbles2 tab-bubbles2">
-                  </i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="card-body">
-            <ul id="popular-posts" class="tab-pane aktiv show">
-              <li>
-                <img src="./img/unite-111-60x60.jpg" alt="pic">
-                <div class="content">
-                  <a class="tabs-entry" title="Template: Paginated">Template: Paginated</a>
-                  <i>
-                    January 8, 2012</i>
-                </div>
-              </li>
-              <li>
-                <img src="./img/flaw-1.jpg" alt="pic">
-                <div class="content">
-                  <a class="tab-entry" title="Post Format: Gallery">Post Format: Gallery</a>
-                  <i>
-                    January 10, 2014</i>
-                </div>
-              </li>
-              <li>
-                <img src="./img/reavel 60x60.jpg" alt="pic">
-                <div class="content">
-                  <a class="tab-entry" title="Markup: Text Alignment">Markup: Text Alignment</a>
-                  <i>
-                    January 10, 2014</i>
-                </div>
-              </li>
-            </ul>
-          </div>
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="true" href="#">POPULAR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">RECENT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#messages" data-toggle="tab">
+                      <i class="icon-bubbles2 tab-bubbles2">
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <ul id="popular-posts" class="tab-pane aktiv show">
+                  <li>
+                    <img src="./img/unite-111-60x60.jpg" alt="pic">
+                    <div class="content">
+                      <a class="tabs-entry" title="Template: Paginated">Template: Paginated</a>
+                      <i>
+                        January 8, 2012</i>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./img/flaw-1.jpg" alt="pic">
+                    <div class="content">
+                      <a class="tab-entry" title="Post Format: Gallery">Post Format: Gallery</a>
+                      <i>
+                        January 10, 2014</i>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./img/reavel 60x60.jpg" alt="pic">
+                    <div class="content">
+                      <a class="tab-entry" title="Markup: Text Alignment">Markup: Text Alignment</a>
+                      <i>
+                        January 10, 2014</i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
         </div>
         <div class="col-sm-6 col-md-4 unite">
-          <div id="text-3"class="unite text">
-            <h3 class="unitetitle">Unite WordPress Theme</h3>
-            <div class="textunite"> 
-              <p>
-                If you like this awesome and completely free
-                 WordPress wedding theme you can download it 
-                 by clicking on button below.
-              </p>
-              <p>
-                If you need any help with theme setup and 
-                configuration you might ask your question on 
-                Colorlib support forum.
-              </p>
-              <form>
-                <imput class="btn-submit" type="Download Now!">
-              </form>
-            </div>
-          </div>
+              <div id="text-3"class="unite text">
+                <h3 class="unitetitle">Unite WordPress Theme</h3>
+                <div class="textunite"> 
+                  <p>
+                    If you like this awesome and completely free
+                    WordPress wedding theme you can download it 
+                    by clicking on button below.
+                  </p>
+                  <p>
+                    If you need any help with theme setup and 
+                    configuration you might ask your question on 
+                    Colorlib support forum.
+                  </p>
+                  <p>
+                    div class="d-grid gap-2">
+                      <button class="btn btn-primary" type="button">Button</button>
+                  </p>
+                </div>
+              </div>
         </div>
+        <div class="col-sm-6 col-md-4 search">
+              <div id="search-6" class="widget search">
+                <h3 class="widgettitle">Search:</h3>
+                <form role="search" method="get" class="search-form form-inline">
+                  <label class="sr-only"></label>
+                  <div class="input-group">
+                    <input type="search" class="search-field form-control" placeholder="Search...">
+                  <span class="input-group-btn">
+                    <button type="submit" class="search-submit btn-primary">
+                      <span class="glyphicon glyphicon-search">
+                      </span>
+                    </button>
+                  </span>
+                  </div>
+                </form>
+              </div>
+              <div id="text-2" class="search text">
+                <div class="search text">
+                  "You can use as many different widgets
+                  in this area as you want. This example
+                    text is added here using default WordPress
+                    text widget. This widget can be enabled 
+                    via Appearance >> Widgets."
+                </div>
+              </div>
+        </div>
+    </div>
+    <footer id="info" class="site-footer" role="info">
+  <div class="site-info container">
+    <div class="row">
+      <nav role="navigation" class="col-md-6">
+        <ul id="menu" class="nav footer-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sample Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Full-Width Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Page A</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Front Page</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright col-md-6">
+        <a href="#" title="Unite Demo">Unite Demo</a>
+        ". All rights reserved."
+        <a href="#" title="Unite Theme">Unite Theme</a>
+        " powered by "
+        <a href="#" title="WordPress">WordPress</a>
+        ". "
       </div>
     </div>
-  </section>
-</footer>
+  </div>
+    </footer>
 
   <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>

@@ -1,4 +1,17 @@
  
+ body {
+    color: #6b6b6b;
+    font-size: 15px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    display: block;
+ }
+ .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .navbar{
     background-color: #54397e;
     ul.dropdown-menu{
@@ -34,8 +47,9 @@
 .carousel-caption{
         position: absolute;
         left: 20px;
-        text-align: left;
+        text-align: center;
         padding-bottom: 20px;
+        color: #fff;
     h4{
         background-color: rgba(#7154a1);
         padding: 15px;
@@ -44,17 +58,5 @@
         margin-bottom: 4px;
     }
 }
-hr.section-divider:after {
-    z-index: 10000;
-    content: "\e9da";
-    font-family: 'icomoon';
-    color: #54397e;
-    position: absolute;
-    top: -23px;
-    left: 50%;
-    right: 50%;
-    width: 40px;
-    height: 30px;
-    margin-left: -20px;
-    font-size: 30px;
-}
+
+
