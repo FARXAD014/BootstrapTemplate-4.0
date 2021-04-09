@@ -48,7 +48,7 @@
         position: absolute;
         left: 20px;
         text-align: center;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
         color: #fff;
     h4{
         background-color: rgba(#7154a1);
@@ -58,9 +58,12 @@
         margin-bottom: 4px;
     }
 }
-
-.card-headerul.nav.nav-tabs {
-    padding: 0;
+hr.section-divider {
+    height: 1px;
+    position: relative;
+    z-index: 100;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 .info {
     background-color: #54397e;
