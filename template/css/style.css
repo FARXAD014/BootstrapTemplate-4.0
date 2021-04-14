@@ -21,6 +21,9 @@ hr.section-divider {
 a.dropdown-item{
     color: #fff;
 }
+a.navbar-brand{
+    color: #fff;
+}
 .nav-tabs>li>a {
     color: #54397e;
     text-transform: uppercase;

@@ -1,0 +1,14 @@
+hr.section-divider::before {
+    z-index: 10000;
+    content: "\e9da";
+    font-family: 'icomoon';
+    color: #54397e;
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    right: 50%;
+    width: 40px;
+    height: 30px;
+    margin-left: -20px;
+    font-size: 30px;
+}
